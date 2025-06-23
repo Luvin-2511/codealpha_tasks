@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="navleft">
+                <img src="logo.svg" alt="">
+                <div class="home"><img src="logo2.svg" alt=""></div>
+                <div class="search">
+                    <input type="text" placeholder="What do you want to play?">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="navright">
+                <div class="rightleft">
+                    <h3>Premium</h3>
+                    <h3>Support</h3>
+                    <h3>Download </h3>
+                </div>
+                <div class="middle">
+                    <h1>|</h1>
+                </div>
+                <div class="rightright">
+                    <h3>Install App</h3>
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="endernav">
+                    <button>Log in</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="left">
+            <div class="library">
+                <b>Your Library</b>
+                <img style="filter: invert(1);" src="logo3.svg" alt="">
+            </div>
+            <div class="cont">
+                <h3>Create your first playlist</h3>
+                <h4>It's easy,we'll help you</h4>
+                <button>Create playlist</button>
+            </div>
+            <div class="cont">
+                <h3>Let's find some podcasts to follow</h3>
+                <h4>We'll keep you updated on new episodes</h4>
+                <button class="btn">Browse podcasts</button>
+            </div>
+
+            <div class="footcont">
+                <div class="yourSongs">
+                    <div class="textSong">
+                        <h2>Your songs</h2>
+                    </div>
+                    <div class="SongCard">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="trend">
+                <div class="now">
+                    <h1>Trending songs</h1>
+                    <h4><a href="">Show all</a></h4>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt="">
+                    <h2>Sapphire</h2>
+                    <p>Ed Sheeran</p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e0279dd2165f2180c79713bfe4a" alt="">
+                    <h2>Muththa Mazhai (Reprise)</h2>
+                    <p>A.R. Rehman, Chinmayi, Siva Ananth</p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c" alt="">
+                    <h2>Shaky</h2>
+                    <p>Sanju Rathod,G-SPXRK</p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e026d73f67ed72ae8eeb251040f" alt="">
+                    <h2>Zamaana Lage(From "Metro...In Dino")</h2>
+                    <p>Pritam,Arijit Singh, Shashwat Singh </p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02062c6573009fdebd43de443b" alt="">
+                    <h2>Manchild</h2>
+                    <p>Sabrina Carpenter</p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02dc9fa033e05148197780389c" alt="">
+                    <h2>Minnalvala</h2>
+                    <p>Jakes Bekoy, Sid Sriram, Sithara Krishnakumar</p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02bc0ec443e91e4d89c893dd7f" alt="">
+                    <h2>Galiyon Ke Ghalib</h2>
+                    <p>Badshah, Hiten</p>
+                </div>
+                <div class="card">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02123cdd6a61f9f07afb4eb11e" alt="">
+                    <h2>STFU</h2>
+                    <p>AP Dhillon, Shinda Kahlon</p>
+                </div>
+            </div>
+            <div class="trend">
+                <div class="now">
+                    <h1>Popular Artists</h1>
+                    <h4><a href="">Show all</a></h4>
+                </div>
+            </div>
+            <div class="cards cardsforadd">
+                <div data-folder="Machine" class="card card1">
+                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                    <h2>Pritam</h2>
+                    <p>Artist</p>
+                </div>
+                <div data-folder="Banjara" class="card card1">
+                    <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="">
+                    <h2>A.R. Rahman</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="card card1">
+                    <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="">
+                    <h2>Arijit Singh</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="card card1">
+                    <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e" alt="">
+                    <h2>Sachin-Jigar</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="card card1">
+                    <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" alt="">
+                    <h2>Vishal-Shekhar</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="card card1">
+                    <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="">
+                    <h2>Atif Aslam</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="card card1">
+                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                    <h2>Pritam</h2>
+                    <p>Artist</p>
+                </div>
+                <div class="card card1">
+                    <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="">
+                    <h2>A.R. Rahman</h2>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="trend">
+                <div class="now">
+                    <h1>Popular albums and singers</h1>
+                    <h4><a href="">Show all</a></h4>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                    <h2>Aashiqui 2</h2>
+                    <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                    <h2>Yeh Jawaani Hai Deewani</h2>
+                    <p>Pritam</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02711c1639b4bc0f9978ae77a6" alt="">
+                    <h2>Sanam Teri Kasam</h2>
+                    <p>Himesh Reshammiya, Sameer Anjaan</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e026d73f67ed72ae8eeb251040f" alt="">
+                    <h2>Zamaana Lage(From "Metro...In Dino")</h2>
+                    <p>Pritam,Arijit Singh, Shashwat Singh </p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02062c6573009fdebd43de443b" alt="">
+                    <h2>Manchild</h2>
+                    <p>Sabrina Carpenter</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02dc9fa033e05148197780389c" alt="">
+                    <h2>Minnalvala</h2>
+                    <p>Jakes Bekoy, Sid Sriram, Sithara Krishnakumar</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02bc0ec443e91e4d89c893dd7f" alt="">
+                    <h2>Galiyon Ke Ghalib</h2>
+                    <p>Badshah, Hiten</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02123cdd6a61f9f07afb4eb11e" alt="">
+                    <h2>STFU</h2>
+                    <p>AP Dhillon, Shinda Kahlon</p>
+                </div>
+            </div>
+            <div class="gap">
+
+            </div>
+        </div>
+    </section>
+    <div class="stickybar">
+        <div class="flexers">
+            <div class="gaanename">
+            </div>
+            <div class="btns">
+                <img id="previous" src="Previous.svg" alt="">
+                <img id="play" src="play.svg" alt="">
+                <img id="next" src="next.svg" alt="">
+            </div>
+            <div class="rightofbar">
+                <div class="gaanaduration">
+                </div>
+                <div class="volume">
+                    <img style="filter: invert(1);" src="volume.svg" alt="">
+                    <input type="range" name="" id="range">
+                </div>
+            </div>
+        </div>
+        <div class="scrollwheel">
+            <div class="bindu">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@iconify-json/hugeicons@1.2.5/index.min.js"></script>
+</body>
+
+</html>
